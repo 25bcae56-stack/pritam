@@ -1,0 +1,180 @@
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S Pritam | Vigilante Dev</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-[#020617] text-[#FDE047] font-sans selection:bg-[#EAB308] selection:text-[#020617]">
+    
+    <!-- Background Overlay -->
+    <div class="fixed inset-0 gotham-bg -z-10 opacity-40"></div>
+    
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-[#020617]/80 backdrop-blur-md border-b border-[#1e293b]">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="w-10 h-10 bg-[#EAB308] flex items-center justify-center batman-border">
+                    <i data-lucide="zap" class="text-[#020617] fill-current w-6 h-6"></i>
+                </div>
+                <span class="text-xl font-black tracking-tighter uppercase italic">Vigilante Dev</span>
+            </div>
+            <div class="hidden md:flex gap-8 text-sm font-bold uppercase tracking-widest">
+                <a href="#about" class="hover:text-[#EAB308] transition-colors">About</a>
+                <a href="#skills" class="hover:text-[#EAB308] transition-colors">Skills</a>
+                <a href="#gallery" class="hover:text-[#EAB308] transition-colors">Gallery</a>
+                <a href="#contact" class="hover:text-[#EAB308] transition-colors">Contact</a>
+            </div>
+            <button class="batman-border bg-[#EAB308] text-[#020617] px-6 py-2 uppercase font-bold tracking-tighter hover:bg-[#FDE047] transition-all">
+                Hire Me
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-20 pb-32 overflow-hidden">
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <div class="flex-1 text-center lg:text-left">
+                    <span class="inline-block mb-6 px-4 py-1 text-[#EAB308] border border-[#EAB308] batman-border bg-[#EAB308]/5 uppercase tracking-[0.3em] font-black italic text-xs">
+                        The Dark Knight of Development
+                    </span>
+                    <h1 class="text-6xl md:text-8xl font-black mb-6 tracking-tighter batman-text-shadow leading-none">
+                        S <span class="text-[#EAB308] italic uppercase">PRITAM</span>
+                    </h1>
+                    <p class="text-xl text-slate-400 mb-8 max-w-2xl leading-relaxed">
+                        By day, a software architect. By night, I hunt bugs and build the future of Gotham's digital landscape. Precision, resilience, and obsession with quality.
+                    </p>
+                    <div class="flex flex-wrap gap-4 justify-center lg:justify-start">
+                        <button class="batman-border h-14 px-8 text-lg font-bold uppercase tracking-widest bg-[#EAB308] text-[#020617]">
+                            View My Tech-Cave
+                        </button>
+                        <button class="h-14 px-8 text-lg font-bold uppercase tracking-widest border-2 border-[#1e293b] hover:border-[#EAB308] transition-all">
+                            The Signal (Contact)
+                        </button>
+                    </div>
+                </div>
+                <div class="flex-1 relative">
+                    <div class="relative w-full aspect-[4/5] max-w-lg mx-auto">
+                        <div class="absolute inset-0 batman-border -rotate-3 z-0 bg-[#EAB308]/10"></div>
+                        <img src="https://cdn.builder.io/api/v1/image/assets%2F69e6441b4f5b4e51bbb1bc9424e39074%2F4421a9fdf1e649619e9ebf9535704c0d?format=webp&width=800&height=1200" alt="S Pritam" class="relative z-10 w-full h-full object-cover batman-border grayscale hover:grayscale-0 transition-all duration-700">
+                        <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-[#EAB308] batman-border flex items-center justify-center rotate-6 z-20">
+                            <i data-lucide="shield" class="w-16 h-16 text-[#020617] fill-current"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  
+        <div class="bg-[#020617] border-2 border-[#1e293b] p-8 hover:border-[#EAB308] transition-all group">
+            <i data-lucide="${skill.icon}" class="w-12 h-12 text-[#EAB308] mb-6 group-hover:scale-110 transition-transform"></i>
+            <h3 class="text-xl font-black uppercase italic mb-4"></h3>
+            <p class="text-slate-400"></p>
+        </div>
+    `;
+    
+<!-- About / Identity Section -->
+<section id="about" class="py-24 bg-[#0f172a]/30 border-y border-[#1e293b]">
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12" id="about-container">
+            <!-- About cards injected by JS -->
+        </div>
+    </div>
+</section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-24 bg-[#0f172a]/50">
+        <div class="container mx-auto px-4">
+            <div class="mb-16 text-center">
+                <h2 class="text-4xl md:text-6xl font-black uppercase italic mb-4">Tactical <span class="text-[#EAB308]">Skills</span></h2>
+                <div class="h-1 w-24 bg-[#EAB308] mx-auto"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8" id="skills-container">
+                <!-- Skills injected by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-24">
+        <div class="container mx-auto px-4">
+            <div class="mb-16 text-center">
+                <h2 class="text-4xl md:text-6xl font-black uppercase italic mb-4">Digital <span class="text-[#EAB308]">Evidence</span></h2>
+                <div class="h-1 w-24 bg-[#EAB308] mx-auto"></div>
+            </div>
+            <div class="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6" id="gallery-container">
+                <!-- Gallery images injected by JS -->
+            </div>
+        </div>
+    </section>
+
+   <!-- Contact Section -->
+<section id="contact" class="py-24 relative overflow-hidden">
+    <div class="container mx-auto px-4 relative z-10">
+        <div class="max-w-4xl mx-auto bg-[#020617]/80 backdrop-blur-lg batman-border p-8 md:p-16">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div>
+                    <h2 class="text-4xl font-black uppercase italic mb-6">Send the <span class="text-[#EAB308]">Signal</span></h2>
+                    <p class="text-slate-400 mb-8">Need a specialist for a high-risk mission? Reach out. The city needs heroes, and your project needs me.</p>
+                    
+                    <div class="space-y-6">
+                        <!-- Email -->
+                        <div class="flex items-center gap-4 group">
+                            <div class="w-10 h-10 bg-[#EAB308]/10 border border-[#EAB308]/20 flex items-center justify-center group-hover:bg-[#EAB308] transition-colors">
+                                <i data-lucide="mail" class="w-5 h-5 group-hover:text-[#020617]"></i>
+                            </div>
+                            <span class="font-bold tracking-tight">pritam@gotham.tech</span>
+                        </div>
+                        
+                        <!-- Phone -->
+                        <div class="flex items-center gap-4 group">
+                            <div class="w-10 h-10 bg-[#EAB308]/10 border border-[#EAB308]/20 flex items-center justify-center group-hover:bg-[#EAB308] transition-colors">
+                                <i data-lucide="phone" class="w-5 h-5 group-hover:text-[#020617]"></i>
+                            </div>
+                            <span class="font-bold tracking-tight">+1-800-GOTHAM</span>
+                        </div>
+
+                        <!-- Social Buttons -->
+                        <div class="flex flex-wrap gap-4 mt-8">
+                            <button class="w-10 h-10 border-2 border-[#EAB308] flex items-center justify-center hover:bg-[#EAB308] hover:text-[#020617] transition-all">
+                                <i data-lucide="github" class="w-5 h-5"></i>
+                            </button>
+                            <button class="w-10 h-10 border-2 border-[#EAB308] flex items-center justify-center hover:bg-[#EAB308] hover:text-[#020617] transition-all">
+                                <i data-lucide="linkedin" class="w-5 h-5"></i>
+                            </button>
+                            <button class="w-10 h-10 border-2 border-[#EAB308] flex items-center justify-center hover:bg-[#EAB308] hover:text-[#020617] transition-all">
+                                <i data-lucide="message-square" class="w-5 h-5"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <form class="space-y-4" id="contact-form" method="post" action="https://formspree.io/f/xdalalaq">
+                    <div class="space-y-2">
+                        <label class="text-xs font-black uppercase tracking-widest text-[#EAB308]">Mission Name</label>
+                        <input type="text" class="w-full bg-[#1e293b]/50 border-2 border-[#1e293b] focus:border-[#EAB308] outline-none p-4 font-bold transition-colors text-white" placeholder="BRUCE WAYNE">
+                    </div>
+                    <div class="space-y-2">
+                        <label class="text-xs font-black uppercase tracking-widest text-[#EAB308]">Intelligence (Email)</label>
+                        <input type="email" class="w-full bg-[#1e293b]/50 border-2 border-[#1e293b] focus:border-[#EAB308] outline-none p-4 font-bold transition-colors text-white" placeholder="BATMAN@GOTHAM.CITY">
+                    </div>
+                    <div class="space-y-2">
+                        <label class="text-xs font-black uppercase tracking-widest text-[#EAB308]">Mission Details</label>
+                        <textarea rows="4" class="w-full bg-[#1e293b]/50 border-2 border-[#1e293b] focus:border-[#EAB308] outline-none p-4 font-bold transition-colors text-white" placeholder="TELL ME ABOUT THE PROJECT..."></textarea>
+                    </div>
+                    <button type="submit" class="w-full h-16 text-lg font-black uppercase tracking-[0.2em] batman-border bg-[#EAB308] text-[#020617] hover:bg-[#FDE047]">
+                        Launch Mission
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <script src="script.js"></script>
+</body>
+</html>
